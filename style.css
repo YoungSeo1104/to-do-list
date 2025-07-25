@@ -1,0 +1,15 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #2980B9;  /* fallback for old browsers */
+  background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+  margin: 0;
+  display: inline-block;
+}
+
+.container {
+  height: 100vh;
+  background: #fff;
+  box-shadow: -1px 2px 7px #fafafa;
+  padding: '20px';
+}
