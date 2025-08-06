@@ -8,8 +8,77 @@ body {
 }
 
 .container {
+  width: 100%;
+  min-width: 280px;
+  max-width: 700px;
   height: 100vh;
   background: #fff;
   box-shadow: -1px 2px 7px #fafafa;
-  padding: '20px';
+  padding: 20px;
+}
+
+.container h1 {
+  margin: 0;
+  padding: 10px;
+}
+
+.input-area {
+  height: 40px;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-area input {
+  width: 100%;
+  font-size: 16px;
+  color: #3892c7;
+  border: 1px solid #3892c7;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.input-area button {
+  width: 50px;
+  color: #fff;
+  background: #3892c7;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.task-area {
+ margin: 10px 0 0 0;
+}
+
+.task-tab {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  border: 1px solid #53b5e2;  
+}
+
+.task-tab li {
+  list-style: none;
+  padding: 8px 10px;
+}
+
+.task-tab li.active {
+  font-weight: 500;
+  color: #3892c7;
+  border-bottom: 4px solid #3b97ca;
+}
+ 
+.task {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #53b5e2;
+  border-top: none;
+  padding: 8px;
+  align-items: center;
+}
+
+.task-done {
+  text-decoration: line-through;
 }
