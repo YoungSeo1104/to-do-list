@@ -48,7 +48,9 @@ body {
 }
 
 .task-area {
- margin: 10px 0 0 0;
+  height: 83vh;
+  overflow: auto;
+  margin: 10px 0 0 0;
 }
 
 .task-tab {
@@ -69,6 +71,10 @@ body {
   color: #3892c7;
   border-bottom: 4px solid #3b97ca;
 }
+
+.task-tab li:hover {
+  cursor: pointer;
+}
  
 .task {
   display: flex;
@@ -79,6 +85,30 @@ body {
   align-items: center;
 }
 
+.t-done {
+  background: #e8e8e8;
+}
+
 .task-done {
   text-decoration: line-through;
+}
+
+.check-btn {
+  border: 1px solid #22adff;
+  color: #fff;
+  background: #22adff;
+}
+
+.check-btn:hover, .check-btn:focus {
+  border: 1px solid #3892c7;
+  background: #3892c7;
+}
+
+.delete-btn {
+  border: none;
+  background: none;
+}
+
+.delete-btn:hover, .delete-btn:focus {
+  background: #f0f0f0;
 }
